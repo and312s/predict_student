@@ -2,5 +2,35 @@ import joblib
 import numpy as np
 import pandas as pd
 
-scaler_Admission = joblib.load("model/scaler_Admission_grade.joblib")
+scaler_Admission_grade = joblib.load("model/scaler_Admission_grade.joblib")
+scaler_Age_at_enrollment = joblib.load("model/scaler_Age_at_enrollment.joblib")
+scaler_Curricular_units_1st_sem_approved = joblib.load("model/scaler_Curricular_units_1st_sem_approved.joblib")
+scaler_Curricular_units_1st_sem_enrolled = joblib.load("model/scaler_Curricular_units_1st_sem_enrolled.joblib")
+scaler_Curricular_units_1st_sem_evaluations = joblib.load("model/scaler_Curricular_units_1st_sem_evaluations.joblib")
+scaler_Curricular_units_1st_sem_grade = joblib.load("model/scaler_Curricular_units_1st_sem_grade.joblib")
+scaler_Curricular_units_2nd_sem_approved = joblib.load("model/scaler_Curricular_units_2nd_sem_approved.joblib")
+scaler_Curricular_units_2nd_sem_enrolled = joblib.load("model/scaler_Curricular_units_2nd_sem_enrolled.joblib")
+scaler_Curricular_units_2nd_sem_evaluations = joblib.load("model/scaler_Curricular_units_2nd_sem_evaluations.joblib")
+scaler_Curricular_units_2nd_sem_grade = joblib.load("model/scaler_Curricular_units_2nd_sem_grade.joblib")
 
+
+Marital_status	
+Application_mode	
+Previous_qualification	
+Admission_grade	
+Displaced	
+Debtor	
+Tuition_fees_up_to_date	
+Gender	
+Scholarship_holder	
+Age_at_enrollment	
+Curricular_units_1st_sem_enrolled	
+Curricular_units_1st_sem_evaluations	
+Curricular_units_1st_sem_approved	
+Curricular_units_1st_sem_grade	
+Curricular_units_1st_sem_without_evaluations	
+Curricular_units_2nd_sem_enrolled	
+Curricular_units_2nd_sem_evaluations	
+Curricular_units_2nd_sem_approved	
+Curricular_units_2nd_sem_grade	
+Curricular_units_2nd_sem_without_evaluations
