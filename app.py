@@ -191,7 +191,7 @@ if st.session_state.active_tab == 'Tab 2':
         data["Curricular_units_1st_sem_without_evaluations"] = [Curricular_units_1st_sem_without_evaluations]
 
 
-    col1, col2, col3, col4, col5 = st.columns([1, 1, 1, 1, 1.5])
+    col1, col2, col3, col4, col5 = st.columns([1, 1, 1.1, 1, 1.2])
     with col1:
         Curricular_units_2nd_sem_approved = float(st.number_input(label="Curricular units 2nd sem approved", max_value=100))
         data["Curricular_units_2nd_sem_approved"] = [Curricular_units_2nd_sem_approved]
