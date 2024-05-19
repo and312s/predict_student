@@ -208,7 +208,7 @@ if st.session_state.active_tab == 'Tab 2':
         data["Curricular_units_2nd_sem_grade"] = [Curricular_units_2nd_sem_grade]
     
     with col5:
-        Curricular_units_2nd_sem_without_evaluations = float(st.number_input(label="Curricular units 2nd sem without evaluations", max_value=100))
+        Curricular_units_2nd_sem_without_evaluations = float(st.number_input(label="Curricular units 2nd sem without evaluations", max_value=100, label_visibility="collapsed"))
         data["Curricular_units_2nd_sem_without_evaluations"] = [Curricular_units_2nd_sem_without_evaluations]
 
 
