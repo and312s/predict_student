@@ -223,14 +223,15 @@ if st.session_state.active_tab == 'Tab 2':
         if st.button("Predict"):
             new_data = data_preprocessing(data=data)
             st.session_state.new_data = new_data  
+            st.session_state.data = data
             switch_tab('Tab 3')
             st.rerun() 
 
 if st.session_state.active_tab == 'Tab 3':
-    if 'data' in st.session_state:
+    if 'new_data' in st.session_state and 'data' in st.session_state:
         new_data = st.session_state.new_data
         data = st.session_state.data
-        with st.expander("View The Data"):
+        with st.expander("View The Preprocessed Data"):
             st.dataframe(data, width=3200, height=10)
         st.write("Result: {}".format(prediction(new_data)))
 
