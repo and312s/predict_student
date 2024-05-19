@@ -118,7 +118,7 @@ if st.session_state.active_tab == 'Tab 1':
     
     st.caption('Welcome to "AI Insights for Educators"! Our platform is tailored to provide Jaya Jaya Institut educators with predictive analytics on student graduation and dropout risks. Use our insights to develop targeted interventions and support your students towards successful academic careers.')
 
-    col1, col2 = st.columns([1, 8, 1])
+    col1, col2, col3 = st.columns([1, 9, 1])
     with col2:
         if st.button("Next"):
             switch_tab('Tab 2')
@@ -212,7 +212,7 @@ if st.session_state.active_tab == 'Tab 2':
         data["Curricular_units_2nd_sem_without_evaluations"] = [Curricular_units_2nd_sem_without_evaluations]
 
 
-    col1, col2, col3 = st.columns([1, 8, 1])
+    col1, col2, col3 = st.columns([1, 9, 1])
     with col1:
         if st.button("Previous"):
             switch_tab('Tab 1')
@@ -234,7 +234,7 @@ if st.session_state.active_tab == 'Tab 3':
         st.write("Result: {}".format(prediction(new_data)))
 
 
-    col1, col2 = st.columns([1, 8, 1])
+    col1, col2 = st.columns([1, 9, 1])
     with col2:
         if st.button("Finish"):
             switch_tab('Tab 1')
