@@ -1,6 +1,5 @@
 import streamlit as st
-import pandas as pd
-import sklearn
+import pandas as pd
 import joblib
 from data_preprocessing import data_preprocessing, encoder_Marital_status, encoder_Scholarship_holder, encoder_Application_mode, encoder_Previous_qualification, encoder_Displaced, encoder_Debtor, encoder_Tuition_fees_up_to_date, encoder_Gender, encoder_Scholarship_holder
 from prediction import prediction
