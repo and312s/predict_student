@@ -169,7 +169,7 @@ if st.session_state.active_tab == 'Tab 2':
         Admission_grade = int(st.number_input(label="Admission_grade", max_value=200))
         data["Admission_grade"] = [Admission_grade]
     
-    col1, col2, col3, col4, col5 = st.columns(5)
+    col1, col2, col3, col4, col5 = st.columns([1, 1, 1.1, 1, 1.4])
     with col1:
         Curricular_units_1st_sem_approved = float(st.number_input(label="Curricular units 1st sem approved", max_value=100))
         data["Curricular_units_1st_sem_approved"] = [Curricular_units_1st_sem_approved]
