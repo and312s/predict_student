@@ -124,6 +124,21 @@ if st.session_state.active_tab == 'Tab 1':
             switch_tab('Tab 2')
 
 if st.session_state.active_tab == 'Tab 2':
+    st.markdown("""
+    <style>
+    .css-16huue1 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .stSelectbox [data-baseweb="select"] > div:first-of-type {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
     col1, col2, col3, col4, col5= st.columns(5)
     data = pd.DataFrame()
 
@@ -208,7 +223,7 @@ if st.session_state.active_tab == 'Tab 2':
         data["Curricular_units_2nd_sem_grade"] = [Curricular_units_2nd_sem_grade]
     
     with col5:
-        Curricular_units_2nd_sem_without_evaluations = float(st.number_input(label="Curricular units 2nd sem without evaluations", max_value=100, label_visibility="collapsed"))
+        Curricular_units_2nd_sem_without_evaluations = float(st.number_input(label="Curricular units 2nd sem without evaluations", max_value=100))
         data["Curricular_units_2nd_sem_without_evaluations"] = [Curricular_units_2nd_sem_without_evaluations]
 
 
