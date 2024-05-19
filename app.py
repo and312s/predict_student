@@ -214,7 +214,7 @@ if st.session_state.active_tab == 'Tab 2':
         data["Curricular_units_2nd_sem_without_evaluations"] = [Curricular_units_2nd_sem_without_evaluations]
 
 
-    col1, col2, col3 = st.columns([1, 5, 1])
+    col1, col2, col3 = st.columns([1, 6, 1])
     with col1:
         if st.button("Previous"):
             switch_tab('Tab 1')
