@@ -125,7 +125,7 @@ if st.session_state.active_tab == 'Tab 1':
 
 if st.session_state.active_tab == 'Tab 2':
 
-    col1, col2, col3, col4, col5= st.columns(5)
+    col1, col2, col3, col4, col5 = st.columns([1, 1, 1.1, 1, 1.4])
     data = pd.DataFrame()
 
     with col1: 
@@ -148,7 +148,7 @@ if st.session_state.active_tab == 'Tab 2':
         Age_at_enrollment = int(st.number_input(label="Age At Enrollment", min_value=17, max_value=70))
         data["Age_at_enrollment"] = [Age_at_enrollment]
 
-    col1, col2, col3, col4, col5 = st.columns(5)
+    col1, col2, col3, col4, col5 = st.columns([1, 1, 1.1, 1, 1.4])
     with col1: 
         Application_mode = st.selectbox(label="Application mode", options=encoder_Application_mode.classes_, index=1)
         data["Application_mode"] = [Application_mode]
