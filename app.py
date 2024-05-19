@@ -225,7 +225,7 @@ if st.session_state.active_tab == 'Tab 2':
             st.session_state.new_data = new_data  
             st.session_state.data = data
             switch_tab('Tab 3')
-            st.rerun() 
+            st.experimental_rerun() 
 
 if st.session_state.active_tab == 'Tab 3':
     if 'new_data' in st.session_state and 'data' in st.session_state:
