@@ -234,8 +234,8 @@ if st.session_state.active_tab == 'Tab 3':
         st.write("Result: {}".format(prediction(new_data)))
 
 
-    col1, col2 = st.columns([1, 12, 1])
-    with col2:
+    col1, col2, col3 = st.columns([1, 12, 1])
+    with col3:
         if st.button("Finish"):
             switch_tab('Tab 1')
 
