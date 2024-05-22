@@ -116,7 +116,7 @@ if st.session_state.active_tab == 'Tab 1':
     
     st.markdown('<p class="gradient-text">AI Insights for Jaya Jaya Institut Educators: Boost Student Graduation Rates.</p>', unsafe_allow_html=True)
     
-    st.caption('Welcome to "AI Insights for Educators"! Our platform is tailored to provide Jaya Jaya Institut educators with predictive analytics on student graduation and dropout risks. Use our insights to develop targeted interventions and support your students towards successful academic careers.')
+    st.caption('Welcome to "AI Insights for Jaya Jaya Institut Educators"! Our platform is tailored to provide Jaya Jaya Institut educators with predictive analytics on student graduation and dropout risks. Use our insights to develop targeted interventions and support your students towards successful academic careers.')
 
     col1, col2, col3 = st.columns([1, 12, 1])
     with col3:
