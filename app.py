@@ -105,13 +105,15 @@ if st.session_state.active_tab == 'Tab 1':
     gradient_text = """
     <style>
     .gradient-text {
-        background: linear-gradient(90deg, purple, blue);
+        background: linear-gradient(90deg, #4E4FEB, #068FFF);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 30px; 
     }
     </style>
+    <div class="gradient-text">This is gradient text</div>
     """
+    
     st.markdown(gradient_text, unsafe_allow_html=True)
     
     st.markdown('<p class="gradient-text">AI Insights for Jaya Jaya Institut Educators: Boost Student Graduation Rates.</p>', unsafe_allow_html=True)
